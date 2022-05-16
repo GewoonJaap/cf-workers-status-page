@@ -5,30 +5,30 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  allmonitorsOperational: 'Alle systemen operationeel'
+  notAllmonitorsOperational: 'Niet alle systemen operationeel'
+  monitorLabelOperational: 'Operationeel'
+  monitorLabelNotOperational: 'Niet Operationeel'
   monitorLabelNoData: 'Geen data'
   dayInHistogramNoData: 'Geen data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramOperational: 'Alles goed'
+  dayInHistogramNotOperational: ' incident(en)' # xx incident(s) recorded
 
 monitors:
   - id: questionnaire-portal-dev # unique identifier
     name: questionnaire-dev.jaap.su
     description: 'MysteryQuest Developer Portaal' # default=empty
-    url: 'https://questionnaire-dev.jaap.su' # URL to fetch
+    url: 'https://questionnaire-acc.jaap.su/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: true # should fetch follow redirects, default=false
+    followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: questionnaire-portal-acc
     name: questionnaire-acc.jaap.su
     description: 'MysteryQuest Acceptatie Portaal'
-    url: 'https://questionnaire-acc.jaap.su'
+    url: 'https://questionnaire-acc.jaap.su/login'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: true # allows the title to be a link, default=true
