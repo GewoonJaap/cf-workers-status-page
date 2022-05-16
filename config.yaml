@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: questionnaire-portal-dev # unique identifier
-    name: questionnaire-dev.jaap.su
+    name: 'MysteryQuest Developer Portaal'
     description: 'MysteryQuest Developer Portaal' # default=empty
     url: 'https://questionnaire-acc.jaap.su/login' # URL to fetch
     method: GET # default=GET
@@ -25,7 +25,7 @@ monitors:
     linkable: true # allows the title to be a link, default=true
 
   - id: questionnaire-portal-acc
-    name: questionnaire-acc.jaap.su
+    name: 'MysteryQuest Acceptatie Portaal'
     description: 'MysteryQuest Acceptatie Portaal'
     url: 'https://questionnaire-acc.jaap.su/login'
     method: GET
