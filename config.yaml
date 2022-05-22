@@ -18,7 +18,7 @@ monitors:
   - id: questionnaire-portal-dev # unique identifier
     name: 'MysteryQuest Developer Portaal'
     description: 'MysteryQuest Developer Portaal' # default=empty
-    url: 'https://questionnaire-acc.jaap.su/login' # URL to fetch
+    url: 'https://questionnaire-dev.jaap.su/login' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
